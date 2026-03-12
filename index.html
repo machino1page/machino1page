@@ -3,198 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>まちの1ページ｜地域でがんばる人のための小さなホームページ</title>
-  <meta name="description" content="まちの1ページは、地域でがんばる個人店や個人活動のための、1ページ完結型ホームページ制作・運用サービスです。">
-  <style>
-    :root {
-      --main-color: #2FA4A9;
-      --text-color: #333;
-      --bg-color: #ffffff;
-      --sub-bg: #f7f9f9;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-      color: var(--text-color);
-      background: var(--bg-color);
-      line-height: 1.7;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    h1, h2 {
-      color: var(--main-color);
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-    }
-
-    p {
-      margin-bottom: 16px;
-    }
-
-    .hero {
-      background: var(--sub-bg);
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .hero h1 {
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-    }
-
-    .box {
-      background: var(--sub-bg);
-      padding: 24px;
-      border-radius: 8px;
-      margin-bottom: 24px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .price {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: var(--main-color);
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 14px 28px;
-      background: var(--main-color);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>まちの1ページ｜地域のお店や活動の紹介ページ</title>
+  <meta name="description" content="まちの1ページは、地域でがんばる個人店・活動・サークルなど、まちのみんなの小さなホームページが集まる場所です。">
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-logo">
+        <a href="index.html">まちの1ページ</a>
+      </div>
+      <button class="menu-toggle" aria-label="メニューを開く・閉じる" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html">トップ</a>
+        <a href="guide.html">掲載案内</a>
+        <a href="#contact">LINEで相談</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- ヒーロー -->
+  <div class="page-content">
+  <!-- ヒーロー：地域のみんなの入口 -->
   <div class="hero">
     <h1>まちの1ページ</h1>
-    <p>地域でがんばる人のための<br>大きくて、続けやすいホームページ</p>
+    <p>地域のみんなが集まる<br>小さなホームページの広場</p>
   </div>
 
-  <!-- サービス概要 -->
+  <!-- このサイトについて -->
   <section>
-    <h2>まちの1ページとは</h2>
+    <h2>まちの1ページは、まちの案内板です</h2>
     <p>
-      まちの1ページは、地域で活動する個人店や個人のための、
-      1ページ完結型ホームページ制作・運用サービスです。
+      まちの1ページは、地域でがんばるお店や活動が、
+      自分の「1ページ」を持てる小さなホームページサービスです。
     </p>
     <p>
-      売上を無理に伸ばすことよりも、<br>
-      「ちゃんと案内できる」「長く続けられる」ことを大切にしています。
-    </p>
-  </section>
-
-  <!-- 対象 -->
-  <section>
-    <h2>対象となる方</h2>
-    <ul>
-      <li>個人店（飲食店・美容・小売・教室など）</li>
-      <li>個人で活動している方</li>
-      <li>地域活動・非営利・ボランティア団体</li>
-    </ul>
-    <p>
-      大規模な事業者様や、頻繁な更新・複雑な構成が必要な場合は対象外となります。
+      個人店、サークル、ボランティア、市民活動など、<br>
+      まちのいろいろな「顔」がここに集まります。
     </p>
   </section>
 
-  <!-- 内容 -->
+  <!-- こんな人たちが使えます -->
   <section>
-    <h2>できること</h2>
+    <h2>だれでも、気軽に使える場所に</h2>
     <div class="box">
       <ul>
-        <li>1ページ完結のホームページ</li>
-        <li>スマホ表示前提のシンプル設計</li>
-        <li>商品・サービス掲載（写真あり・最大10件）</li>
-        <li>おすすめ表示（最大3件）</li>
-        <li>お知らせ・ギャラリー（表示ON/OFF可能）</li>
-        <li>LINEへの導線を重視</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 料金 -->
-  <section>
-    <h2>料金</h2>
-    <div class="box">
-      <p class="price">運用サポート（月額）</p>
-      <ul>
-        <li>非営利・ボランティア：500円／月</li>
-        <li>通常（個人活動・営利）：1,000円／月</li>
+        <li>近所のごはん屋さんやカフェ</li>
+        <li>子ども向け教室・習いごと</li>
+        <li>趣味のサークルや部活動</li>
+        <li>地域のイベント・お祭り</li>
+        <li>NPO・ボランティア・市民活動</li>
       </ul>
       <p>
-        運用サポートに加入される方は、初期制作費はかかりません。
+        「ちゃんと案内したいけれど、大きなホームページまではいらない」<br>
+        そんなときに、まちの1ページを使ってもらえたらうれしいです。
       </p>
     </div>
   </section>
 
-  <!-- 更新 -->
+  <!-- 掲載したい方へ（案内ページへの導線） -->
   <section>
-    <h2>更新について</h2>
-    <ul>
-      <li>月1回程度までの軽微な更新に対応</li>
-      <li>文章の差し替え、写真の入れ替えなど</li>
-      <li>更新が多い場合は別途ご相談</li>
-    </ul>
-  </section>
-
-  <!-- 流れ -->
-  <section>
-    <h2>制作の流れ</h2>
-    <ol>
-      <li>サンプルページ確認</li>
-      <li>修正1回まで</li>
-      <li>内容確定・お支払い</li>
-      <li>公開</li>
-    </ol>
-  </section>
-
-  <!-- 連絡 -->
-  <section>
-    <h2>連絡方法</h2>
+    <h2>掲載を考えている方へ</h2>
     <p>
-      連絡はLINEトークのみです。<br>
-      写真や文章もLINEでやり取りします。
+      掲載の内容・料金・更新の仕方など、くわしいご案内は、<br>
+      下のボタンからご覧いただけます。
     </p>
+    <div class="cta">
+      <a href="guide.html">掲載案内ページを見る</a>
+    </div>
+  </section>
 
+  <!-- 連絡方法：TOPにも軽く載せる -->
+  <section id="contact">
+    <h2>まずはLINEで気軽に相談</h2>
+    <p>
+      「自分の活動でも使えるかな？」という段階でも大丈夫です。<br>
+      わからないことがあれば、LINEで気軽におたずねください。
+    </p>
     <div class="cta">
       <a href="#">LINEで相談する</a>
     </div>
@@ -204,5 +92,17 @@
     <p>© まちの1ページ</p>
   </footer>
 
+  </div>
+  <script>
+    (function () {
+      var button = document.querySelector('.menu-toggle');
+      var body = document.body;
+      if (!button) return;
+      button.addEventListener('click', function () {
+        var isOpen = body.classList.toggle('nav-open');
+        button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    })();
+  </script>
 </body>
 </html>
